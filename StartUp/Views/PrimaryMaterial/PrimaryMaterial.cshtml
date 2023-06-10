@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Primary Material";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!--Section description-->
+<p class="text-center w-responsive mx-auto mb-5">
+    Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+    a matter of hours to help you.
+</p>
+
+<div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="name" class="">Your name</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="email" class="">Your email</label>
+                        <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+            <!--Grid row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <label for="PhoneNumber" class="">PhoneNumber</label>
+                        <input type="tel" id="PhoneNumber" name="PhoneNumber" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="email" class="">Quantity</label>
+                        <input type="number" id="Quantity" name="Quantity" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <div class="md-form">
+                        <label for="Address">Address</label>
+                        <input type="text" id="Address" name="Address" class="form-control">
+                   </div>
+                </div>
+            </div>
+            <!--Grid row-->
+
+        </form>
+
+        <div class="">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        </div>
+        <div class="status"></div>
+    </div>
+</div>
